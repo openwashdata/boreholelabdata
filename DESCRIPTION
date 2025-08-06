@@ -1,9 +1,9 @@
 Package: boreholelabdata
-Title: What the Package Does (One Line, Title Case)
+Title: Water Quality Laboratory Analysis and Reporting Dataset – Malawi (2017–2019)
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
