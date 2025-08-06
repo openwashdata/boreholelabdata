@@ -1,0 +1,54 @@
+directory,file_name,variable_name,variable_type,description
+data/,boreholelabdata.rda,waterpoint_name,character,Name of the water point site
+data/,boreholelabdata.rda,waterpoint_type,character,"category of the water point (e.g., borehole, well, spring)"
+data/,boreholelabdata.rda,latitude,numeric,Geographic latitude coordinate of the water point
+data/,boreholelabdata.rda,longitude,numeric,Geographic longitude coordinate of the water point
+data/,boreholelabdata.rda,date_sample_collected,character,Date when the water sample was physically collected from the site
+data/,boreholelabdata.rda,date_sample_analyzed,character,Date when the collected sample was analyzed in the laboratory
+data/,boreholelabdata.rda,date_results_received,character,Date when the lab results were received or recorded
+data/,boreholelabdata.rda,lab_sample_no,character,Unique laboratory identification number assigned to the sample
+data/,boreholelabdata.rda,ph_value,numeric,pH value of the water sample
+data/,boreholelabdata.rda,ph_within_mw_standards,character,pH value falls within Malawis water quality standards (Yes/No)
+data/,boreholelabdata.rda,conductivity,numeric,"Measures electrical conductivity of water, indicating ion concentration (µS/cm at 25C)"
+data/,boreholelabdata.rda,conductivity_within_mw_standards,character,conductivity is within Malawis acceptable standards (Yes/No)
+data/,boreholelabdata.rda,tds_mg_l,numeric,Concentration of total dissolved solids in mg per liter
+data/,boreholelabdata.rda,tds_within_standards,character,total dissolved solids fall within Malawis standards (Yes/No)
+data/,boreholelabdata.rda,carbonate_mg_l,numeric,Concentration of carbonate ions in mg per liter
+data/,boreholelabdata.rda,carbonate_within_standards,character,carbonate levels meet Malawis water standards (Yes/No)
+data/,boreholelabdata.rda,bicarbonate_mg_l,numeric,Concentration of bicarbonate ions in mg per liter
+data/,boreholelabdata.rda,bicarbonate_within_standards,character,bicarbonate levels meet Malawis water standards (Yes/No)
+data/,boreholelabdata.rda,chloride_mg_l,numeric,Concentration of chloride ions in mg per liter
+data/,boreholelabdata.rda,chloride_within_standards,character,chloride levels are within Malawis acceptable limits (Yes/No)
+data/,boreholelabdata.rda,sulphate_mg_l,numeric,Concentration of sulphate ions in mg per liter
+data/,boreholelabdata.rda,sulphate_within_standards,character,sulphate levels are within Malawis standards (Yes/No)
+data/,boreholelabdata.rda,nitrate_mg_l,numeric,Concentration of nitrate ions in mg per liter
+data/,boreholelabdata.rda,nitrate_within_standards,character,nitrate levels comply with Malawis standards (Yes/No)
+data/,boreholelabdata.rda,fluoride_mg_l,numeric,Concentration of fluoride ions in mg per liter
+data/,boreholelabdata.rda,fluoride_within_standards,logical,fluoride levels meet Malawis water quality standards (Yes/No)
+data/,boreholelabdata.rda,sodium_mg_l,numeric,Concentration of sodium ions in mg per liter
+data/,boreholelabdata.rda,sodium_within_standards,character,sodium concentration is within Malawis standards (Yes/No)
+data/,boreholelabdata.rda,potassium_mg_l,numeric,Concentration of potassium ions in mg per liter
+data/,boreholelabdata.rda,potassium_within_standards,character,potassium levels comply with Malawis water standards (Yes/No)
+data/,boreholelabdata.rda,calcium_mg_l,numeric,Concentration of calcium ions in mg per liter
+data/,boreholelabdata.rda,calcium_within_standards,character,calcium levels fall within Malawis acceptable standards (Yes/No)
+data/,boreholelabdata.rda,magnesium_mg_l,numeric,Concentration of magnesium ions in mg per liter
+data/,boreholelabdata.rda,magnesium_within_standards,character,magnesium levels comply with Malawis standards (Yes/No)
+data/,boreholelabdata.rda,iron_mg_l,numeric,Concentration of iron in mg per liter
+data/,boreholelabdata.rda,iron_within_standards,character,iron concentration is within Malawis water quality limits (Yes/No)
+data/,boreholelabdata.rda,manganese_mg_l,numeric,Concentration of manganese in mg per liter
+data/,boreholelabdata.rda,manganese_within_standards,character,manganese levels meet Malawis water standards (Yes/No)
+data/,boreholelabdata.rda,hardness_mg_l,numeric,Total hardness of water measured as mg/l of calcium carbonate
+data/,boreholelabdata.rda,hardness_within_standards,character,total hardness is within Malawis acceptable limits (Yes/No)
+data/,boreholelabdata.rda,alkalinity_mg_l,numeric,Total alkalinity of water measured as mg/l of calcium carbonate
+data/,boreholelabdata.rda,alkalinity_within_standards,character,alkalinity levels are within Malawis standards (Yes/No)
+data/,boreholelabdata.rda,arsenic,numeric,Concentration of arsenic in water
+data/,boreholelabdata.rda,arsenic_within_standards,character,arsenic levels comply with Malawis water quality standards (Yes/No)
+data/,boreholelabdata.rda,turbidity_ntu,numeric,Measure of water turbidity in Nephelometric Turbidity Units (NTU)
+data/,boreholelabdata.rda,turbidity_within_standards,character,turbidity is within Malawis acceptable water quality limits (Yes/No)
+data/,boreholelabdata.rda,suspended_solids,numeric,Concentration of suspended solids in water (mg/l)
+data/,boreholelabdata.rda,suspended_within_standards,logical,suspended solids levels meet Malawis standards (Yes/No)
+data/,boreholelabdata.rda,faecal_coli_count,numeric,Count of fecal coliform bacteria per 100 ml of water
+data/,boreholelabdata.rda,faecal_coli_within_standards,character,fecal coliform counts meet Malawis water quality standards (Yes/No)
+data/,boreholelabdata.rda,faecal_strep_count,numeric,Count of fecal streptococci bacteria per 100 ml of water
+data/,boreholelabdata.rda,faecal_strep_within_standards,character,fecal streptococci counts meet Malawis water standards (Yes/No)
+data/,boreholelabdata.rda,comments,character,Additional remarks or observations related to the sample or site
