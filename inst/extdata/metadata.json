@@ -1,0 +1,36 @@
+{
+  "@context": "https://openwashdata.org/",
+  "@type": "Dataset",
+  "name": "boreholelabdata",
+  "description": "This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019",
+  "publisher": {
+    "@type": "Organization",
+    "name": "openwashdata @ Global Health Engineering, ETH Zurich",
+    "url": "https://openwashdata.org/"
+  },
+  "datePublished": "2025-08-06",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "water quality, water points",
+  "distribution": {
+    "@type": "DataDownload",
+    "url": "https://raw.githubusercontent.com/openwashdata/boreholelabdata/main/inst/extdata/boreholelabdata.csv",
+    "contentUrl": "https://raw.githubusercontent.com/openwashdata/boreholelabdata/main/inst/extdata/boreholelabdata.csv",
+    "encodingFormat": "text/csv"
+  },
+  "encodingFormat": "CSV",
+  "version": "1.0",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": null
+  },
+  "temporalCoverage": {
+    "@type": "DateTime",
+    "startDate": null,
+    "endDate": null
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": ["Emmanuel Mhango", "Finley Patterson", "Jamie Rattray"],
+    "email": ["emmanuellmhango@gmail.com", null, null]
+  }
+}

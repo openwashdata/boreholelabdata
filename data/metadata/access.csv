@@ -1,0 +1,3 @@
+fileName,name,contentUrl,encodingFormat
+boreholelabdata.csv,boreholelabdata,https://raw.githubusercontent.com/openwashdata/boreholelabdata/main/inst/extdata/boreholelabdata.csv,csv
+boreholelabdata.xlsx,boreholelabdata,https://raw.githubusercontent.com/openwashdata/boreholelabdata/main/inst/extdata/boreholelabdata.xlsx,ooxml
