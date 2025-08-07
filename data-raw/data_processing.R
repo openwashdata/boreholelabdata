@@ -66,6 +66,46 @@ data_in[] <- lapply(data_in, function(x) {
 check_utf8(data_in)
 
 boreholelabdata <- data_in
+#========================================
+# Load required libraries
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Select relevant compliance columns and reshape to long format
+compliance_long <- boreholelabdata %>%
+  select(fluoride_within_standards,
+         nitrate_within_standards,
+         ph_within_mw_standards) %>%
+  pivot_longer(cols = everything(),
+               names_to = "parameter",
+               values_to = "compliance") %>%
+  filter(!is.na(compliance)) %>%
+  mutate(parameter = case_when(
+    parameter == "fluoride_within_standards" ~ "Fluoride",
+    parameter == "nitrate_within_standards" ~ "Nitrate",
+    parameter == "ph_within_mw_standards" ~ "pH",
+    TRUE ~ parameter
+  ))
+
+# Count compliance status by parameter
+compliance_summary <- compliance_long %>%
+  group_by(parameter, compliance) %>%
+  summarise(count = n(), .groups = "drop")
+
+# Plot stacked bar chart
+ggplot(compliance_summary, aes(x = parameter, y = count, fill = compliance)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("Yes" = "green", "No" = "red")) +
+  labs(
+    title = "Water Quality Compliance Summary",
+    x = "Parameter",
+    y = "Number of Samples",
+    fill = "Within Standards"
+  ) +
+  theme_minimal()
+
+#============================
 
 # Export Data ------------------------------------------------------------------
 usethis::use_data(boreholelabdata, overwrite = TRUE)
