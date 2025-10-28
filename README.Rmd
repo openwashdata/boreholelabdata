@@ -1,0 +1,203 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# Water Quality Laboratory Analysis and Reporting Dataset – Malawi (2017–2019)
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The dataset captures water quality test results from various water
+points across Malawi, collected between 2017 and 2019 using the mWater
+platform. It includes metadata on sample collection events, site
+geolocation, submission and approval timelines, and laboratory analysis
+outcomes. The data reflects structured workflows for monitoring water
+safety, supporting both operational decision-making and long-term water
+quality management.
+
+**Intended Users and Applications**
+
+1.  **Water Utilities and Service Providers:** To monitor the quality of
+    water from different sources, schedule maintenance or treatment, and
+    improve service delivery.
+
+2.  **Environmental Health Officers and District Councils:** To identify
+    unsafe water points, plan targeted inspections, and coordinate local
+    water safety interventions.
+
+3.  **WASH Program Implementers:** To assess baseline water quality
+    conditions, prioritize high-risk areas, and track the impact of
+    water safety programs.
+
+4.  **Academic Institutions and Research Bodies:** To analyze regional
+    and seasonal trends in water quality and contribute to the evidence
+    base for safe water practices in low-resource settings.
+
+5.  **Government Ministries**: To inform national water safety planning,
+    update regulations, and allocate resources based on real-world data.
+
+6.  **Development Agencies and International Donors**: To evaluate
+    program outcomes, justify investments, and align support with areas
+    of greatest water quality need.
+
+## Installation
+
+You can install the development version of boreholelabdata from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/boreholelabdata")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/boreholelabdata/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to water quality test results from various
+water points across Malawi, collected between 2017 and 2019 using the
+mWater platform
+
+```{r}
+library(boreholelabdata)
+```
+
+### boreholelabdata
+
+The dataset `boreholelabdata` contains `r nrow(boreholelabdata)`
+observations and `r ncol(boreholelabdata)` variables
+
+```{r}
+boreholelabdata |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "boreholelabdata.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example Visualization
+
+```{r}
+library(boreholelabdata)
+# Visualization 1: Water Quality Compliance Summary
+# Purpose: Display number of samples that meet or exceed Malawian standards per parameter
+# Load required libraries
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Select relevant compliance columns and reshape to long format
+compliance_long <- boreholelabdata %>%
+  select(fluoride_within_standards,
+         nitrate_within_standards,
+         ph_within_mw_standards) %>%
+  pivot_longer(cols = everything(),
+               names_to = "parameter",
+               values_to = "compliance") %>%
+  filter(!is.na(compliance)) %>%
+  mutate(parameter = case_when(
+    parameter == "fluoride_within_standards" ~ "Fluoride",
+    parameter == "nitrate_within_standards" ~ "Nitrate",
+    parameter == "ph_within_mw_standards" ~ "pH",
+    TRUE ~ parameter
+  ))
+
+# Count compliance status by parameter
+compliance_summary <- compliance_long %>%
+  group_by(parameter, compliance) %>%
+  summarise(count = n(), .groups = "drop")
+
+# Plot stacked bar chart
+ggplot(compliance_summary, aes(x = parameter, y = count, fill = compliance)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("Yes" = "green", "No" = "red")) +
+  labs(
+    title = "Water Quality Compliance Summary",
+    x = "Parameter",
+    y = "Number of Samples",
+    fill = "Within Standards"
+  ) +
+  theme_minimal()
+
+
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("boreholelabdata")
+```
