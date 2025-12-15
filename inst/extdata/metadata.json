@@ -8,7 +8,7 @@
     "name": "openwashdata @ Global Health Engineering, ETH Zurich",
     "url": "https://openwashdata.org/"
   },
-  "datePublished": "2025-08-06",
+  "datePublished": "2025-12-15",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "keywords": "water quality, water points",
   "distribution": {
@@ -30,7 +30,7 @@
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "contactType": ["Emmanuel Mhango", "Finley Patterson", "Jamie Rattray"],
-    "email": ["emmanuellmhango@gmail.com", null, null]
+    "contactType": ["Emmanuel Mhango", "Finley Patterson", "Jamie Rattray", "Emmanuel Mhango"],
+    "email": ["emmanuellmhango@gmail.com", null, null, "emmanuellmhango@gmail.com"]
   }
 }
