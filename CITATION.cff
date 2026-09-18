@@ -7,12 +7,12 @@ cff-version: 1.2.0
 message: 'To cite package "boreholelabdata" in publications use:'
 type: dataset
 license: CC-BY-4.0
-title: 'boreholelabdata: Water Quality Laboratory Analysis and Reporting Dataset –
-  Malawi (2017–2019)'
+title: 'boreholelabdata: Borehole Water Quality Laboratory Results, Malawi 2017 to
+  2019'
 version: 0.0.0.9000
 doi: 10.5281/zenodo.17433461
 abstract: This dataset contains comprehensive records of water quality test results
-  collected from various water points across Malawi between 2017 and 2019
+  collected from various water points across Malawi between 2017 and 2019.
 authors:
 - family-names: Mhango
   given-names: Emmanuel

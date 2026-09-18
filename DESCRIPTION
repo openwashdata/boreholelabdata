@@ -1,5 +1,5 @@
 Package: boreholelabdata
-Title: Water Quality Laboratory Analysis and Reporting Dataset – Malawi (2017–2019)
+Title: Borehole Water Quality Laboratory Results, Malawi 2017 to 2019
 Version: 0.0.0.9000
 Authors@R: c(
     person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),
@@ -7,7 +7,7 @@ Authors@R: c(
     person("Finlay", "Paterson", role = c("aut", "ctb")),
     person("Jamie", "Rattray", role = c("aut", "ctb"))
   )
-Description: This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019
+Description: This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
