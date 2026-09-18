@@ -15,4 +15,4 @@ bibentry(bibtype = "Misc",
          url = "https://github.com/openwashdata/boreholelabdata",
          abstract = "This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019.",
          keywords = "open data,washdata,water quality,groundwater,boreholes,Malawi,wash,water-quality",
-         version = "0.0.0.9000")
+         version = "1.0.1")
