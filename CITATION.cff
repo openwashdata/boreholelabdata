@@ -1,0 +1,42 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "boreholelabdata" in publications use:'
+type: dataset
+license: CC-BY-4.0
+title: 'boreholelabdata: Borehole Water Quality Laboratory Results, Malawi 2017 to
+  2019'
+version: 1.0.1
+doi: 10.5281/zenodo.17433461
+abstract: This dataset contains comprehensive records of water quality test results
+  collected from various water points across Malawi between 2017 and 2019.
+authors:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+- family-names: Paterson
+  given-names: Finlay
+- family-names: Rattray
+  given-names: Jamie
+repository-code: https://github.com/openwashdata/boreholelabdata
+url: https://github.com/openwashdata/boreholelabdata
+date-released: '2026-09-18'
+contact:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+keywords:
+- open data
+- washdata
+- water quality
+- groundwater
+- boreholes
+- Malawi
+- wash
+- water-quality
+
