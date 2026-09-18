@@ -9,7 +9,7 @@ data/,boreholelabdata.rda,date_results_received,character,Date when the lab resu
 data/,boreholelabdata.rda,lab_sample_no,character,Unique laboratory identification number assigned to the sample
 data/,boreholelabdata.rda,ph_value,numeric,pH value of the water sample
 data/,boreholelabdata.rda,ph_within_mw_standards,character,pH value falls within Malawis water quality standards (Yes/No)
-data/,boreholelabdata.rda,conductivity,numeric,"Measures electrical conductivity of water, indicating ion concentration (µS/cm at 25C)"
+data/,boreholelabdata.rda,conductivity,numeric,"Measures electrical conductivity of water, indicating ion concentration (ÂµS/cm at 25C)"
 data/,boreholelabdata.rda,conductivity_within_mw_standards,character,conductivity is within Malawis acceptable standards (Yes/No)
 data/,boreholelabdata.rda,tds_mg_l,numeric,Concentration of total dissolved solids in mg per liter
 data/,boreholelabdata.rda,tds_within_standards,character,total dissolved solids fall within Malawis standards (Yes/No)
