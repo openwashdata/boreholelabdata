@@ -12,7 +12,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/openwashdata/boreholelabdata/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/openwashdata/boreholelabdata/blob/v1.0.1/inst/CITATION)
 
 Mhango E, Paterson F, Rattray J (2026). “boreholelabdata: Borehole Water
 Quality Laboratory Results, Malawi 2017 to 2019.”
