@@ -1,0 +1,18 @@
+
+bibentry(bibtype = "Misc",
+         key = "mhango_etall:2026",
+         title = "boreholelabdata: Borehole Water Quality Laboratory Results, Malawi 2017 to 2019",
+         author = c(person(given = "Emmanuel",
+                           family = "Mhango",
+                           email = "emmanuellmhango@gmail.com",
+                           comment = c(ORCID = "0000-0003-3197-6244")),
+                    person(given = "Finlay",
+                           family = "Paterson"),
+                    person(given = "Jamie",
+                           family = "Rattray")),
+         year = "2026",
+         doi = "10.5281/zenodo.17433461",
+         url = "https://github.com/openwashdata/boreholelabdata",
+         abstract = "This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019.",
+         keywords = "open data,washdata,water quality,groundwater,boreholes,Malawi,wash,water-quality",
+         version = "1.0.1")

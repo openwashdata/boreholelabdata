@@ -1,22 +1,23 @@
 Package: boreholelabdata
-Title: Water Quality Laboratory Analysis and Reporting Dataset – Malawi (2017–2019)
-Version: 0.0.0.9000
+Title: Borehole Water Quality Laboratory Results, Malawi 2017 to 2019
+Version: 1.0.1
 Authors@R: c(
     person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3197-6244")),
     person("Finlay", "Paterson", role = c("aut", "ctb")),
     person("Jamie", "Rattray", role = c("aut", "ctb"))
   )
-Description: This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019
+Description: This dataset contains comprehensive records of water quality test results collected from various water points across Malawi between 2017 and 2019.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
-Date: 2025-08-06
+Date: 2026-09-18
 URL: https://github.com/openwashdata/boreholelabdata
 BugReports: https://github.com/openwashdata/boreholelabdata/issues
+X-schema.org-keywords: open data, washdata, water quality, groundwater, boreholes, Malawi
+Config/roxygen2/version: 8.0.0

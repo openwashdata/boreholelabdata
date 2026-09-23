@@ -30,7 +30,15 @@
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "contactType": ["Emmanuel Mhango", "Finley Patterson", "Jamie Rattray", "Emmanuel Mhango"],
-    "email": ["emmanuellmhango@gmail.com", null, null, "emmanuellmhango@gmail.com"]
+    "contactType": [
+      "Emmanuel Mhango",
+      "Finley Patterson",
+      "Jamie Rattray"
+    ],
+    "email": [
+      "emmanuellmhango@gmail.com",
+      null,
+      null
+    ]
   }
 }
