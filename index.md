@@ -3,6 +3,8 @@
 [![R-CMD-check](https://github.com/openwashdata/boreholelabdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/boreholelabdata/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17433461.svg)](https://zenodo.org/doi/10.5281/zenodo.17433461)
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The dataset captures water quality test results from various water
 points across Malawi, collected between 2017 and 2019 using the mWater
 platform. It includes metadata on sample collection events, site
