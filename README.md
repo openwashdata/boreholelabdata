@@ -13,6 +13,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17433461.svg)](https://zenodo.org/doi/10.5281/zenodo.17433461)
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 The dataset captures water quality test results from various water
 points across Malawi, collected between 2017 and 2019 using the mWater
 platform. It includes metadata on sample collection events, site
