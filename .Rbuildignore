@@ -9,3 +9,5 @@
 ^pkgdown$
 ^\.github$
 ^CITATION\.cff$
+^_brand\.yml$
+^logos$
